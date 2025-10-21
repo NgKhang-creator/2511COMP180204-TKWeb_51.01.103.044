@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+        .left-column {
+            width: 40%;
+            background-color: #343a40; 
+            color: #fff;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .profile-pic-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border: 3px solid;
+        }
+        .left-column h3 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }   
+        .left-column p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+             margin-bottom: 10px;
+        }
+        .contact-info .icon {
+            margin-right: 10px;
+        }
+        .right-column {
+            width: 60%;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .header {
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: normal;
+            color: #555;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .right-column h3 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #343a40;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .timeline-item {
+            margin-bottom: 20px;
+        } 
+        .timeline-item h4 {
+            margin: 0 0 5px 0;
+            font-size: 16px;
+        }
+        .timeline-item .date {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+            display: block;
+        }    
+        .timeline-item p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="profile-pic-container">
+                <div>
+                    <img src="497505668_1213650443760501_8753171819444148418_n.jpg" class="profile-img">
+                </div>
+            </div>
+            <div class="about-me">
+                <h3>Giới Thiệu Bản Thân</h3>
+                <p>Mình tên là Nguyễn Phúc Khang, sinh ngày 02/10/2007 hiện đang là sinh viên của trường đại học Sư Phạm Tp.Hồ Chí Minh. Mình là 1 người khá hòa đồng, thân thiện, thích giao tiếp với mọi người xung quanh. </p>
+            </div>
+            <div class="hobbies">
+                <h3>Sở Thích</h3>
+                <p>Mình thích đi chơi, ăn uống, tham gia thể thao, du lịch mọi nơi và cũng có đam mê thể thao điện tử</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p><span class="icon"><i class="fas fa-map-marker-alt"></i></span> Địa chỉ: 302A, đường tỉnh lộ 8, ấp Mũi Lớn 1, xã Tân An Hội, Tp.Hồ Chí Minh</p>
+                <p><span class="icon"><i class="fas fa-phone"></i></span> Phone: 0902359481</p>
+                <p><span class="icon"><i class="fas fa-envelope"></i></span> Email: ngphkhang0210@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <h3>Giáo viên cố vấn</h3>
+                <p>Cô Võ Lê Phúc Hậu - Giảng viên ngành Thiết kế web</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="header">
+                <h1>Nguyễn Phúc Khang</h1>
+                <h2>Sinh viên ĐH Sư Phạm HCM</h2>
+            </div>
+            <div class="education">
+                <h3>Học Tập</h3>
+                <div class="timeline-item">
+                    <span class="date">2013 - 2018</span>        
+                    <p>Học tập tại trường tiểu học Nguyễn Văn Lịch</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2018 - 2022</span>
+                    <p>Học tập tại trường THCS Thị Trấn 2</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2022 - 2025</span>  
+                    <p>Học tập tại trường THPT Củ Chi</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2025 - Hiện nay</span>  
+                    <p>Học tập tại trường Đại học Sư Phạm HCM(HCMUE)</p>
+                </div>
+            </div>
+            <div class="experience">
+                <h3>Thành tích cá nhân</h3>
+                <div class="timeline-item">
+                    <p>Đạt danh hiệu học sinh giỏi 11 năm</p>
+                </div>
+                <div class="timeline-item">
+                    <p>Hoạt động tích cực tại clb Stem IoT trường THPT Củ Chi</p>
+                </div>
+                 <div class="timeline-item">
+                    <p>Giải nhất Hội thi sản phẩm Sáng tạo thanh thiếu nhi cấp huyện</p>
+                </div>
+                <div class="timeline-item">
+                    <p>Giải nhất Cuộc thi Sáng tạo Khoa học Công nghệ CLB STEM - ROBOTICS ORC 04.2025 cấp THCS - THPT toàn quốc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
