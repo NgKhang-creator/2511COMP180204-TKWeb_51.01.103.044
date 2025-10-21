@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Sản Phẩm</title>
+</head>
+<body>
+
+    <h1>Quản Lý Sản Phẩm</h1>
+    <input type="text" id="new-product-name" placeholder="Tên sản phẩm...">
+    <button onclick="addProduct()">Thêm</button>
+    <hr>
+    <h2>Danh sách sản phẩm</h2>
+    <div id="product-list"></div>
+    <script>
+        let products = ["Samsung Galaxy Ultra", "Iphone 17 Pro Max", "Lenovo"];
+        function renderProducts() {
+            let productListDiv = document.getElementById("product-list");
+            productListDiv.innerHTML = ""; 
+            for (let i = 0; i < products.length; i++) {
+                productListDiv.innerHTML += `
+                    <p>
+                        ${i + 1}. ${products[i]}
+                        <button onclick="editProduct(${i})">Sửa</button>
+                        <button onclick="deleteProduct(${i})">Xóa</button>
+                    </p>
+                `;
+            }
+        }
+        function addProduct() {
+            let input = document.getElementById("new-product-name");
+            let productName = input.value; 
+            if (productName) {
+                products.push(productName); 
+                input.value = ""; 
+                renderProducts();
+            }
+        }
+        function editProduct(index) {
+            let oldName = products[index];
+            let newName = prompt("Nhập tên mới cho sản phẩm:", oldName);
+            if (newName) {
+                products[index] = newName; 
+                renderProducts(); 
+            }
+        }
+        function deleteProduct(index) {
+            products.splice(index, 1); 
+            renderProducts(); 
+        }
+        renderProducts();
+    </script>
+</body>
+</html>
