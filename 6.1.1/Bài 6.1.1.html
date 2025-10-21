@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hồ cá vui nhộn</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+        background-color: #2ab1ef; 
+        overflow: hidden; 
+    }
+    #shark {
+        position: absolute;
+        animation-name: Shark;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+
+    @keyframes Shark {
+        0%   { left: 100px; top: 400px; transform: scaleX(1); }
+        20%  { left: 300px; top: 400px; }
+        40%  { left: 500px; top: 300px; }
+        60%  { left: 800px; top: 50px;  }
+        80%  { left: 500px; top: 100px; }
+        99%  { left: 100px; top: 400px; transform: scaleX(1); }
+        100% { left: 100px; top: 400px; transform: scaleX(-1); } 
+    }
+    #turtle {
+        position: absolute;
+        top: 60%;
+        animation: SwimAndTurn 25s linear infinite 2s;
+    }
+    #diver1 {
+        position: absolute;
+        left: 10%;
+        animation: DiverBob 12s ease-in-out infinite;
+    }
+    #diver2 {
+        position: absolute;
+        left: 45%;
+        animation: DiverBob 15s ease-in-out infinite 3s; 
+    }
+    #diver3 {
+        position: absolute;
+        left: 80%;
+        animation: DiverBob 10s ease-in-out infinite 1s;
+    }
+    @keyframes DiverBob {
+        0%   { top: 100px; }
+        50%  { top: 350px; }
+        100% { top: 100px; }
+    }
+    #goldFishSchool {
+        position: absolute;
+        top: 20%;
+        animation: SwimAndTurn 20s linear infinite;
+    }
+    #faintSchool {
+        position: absolute;
+        top: 75%;
+        animation: SwimAndTurn 30s linear infinite 5s;
+    }
+    @keyframes SwimAndTurn {
+    0% {
+        left: -250px; 
+        transform: scaleX(1);
+    }
+    49% {
+        left: 100%; 
+        transform: scaleX(1);
+    }
+    50% {
+        left: 100%; 
+        transform: scaleX(-1);
+    }
+    99% {
+        left: -250px;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: -250px;
+        transform: scaleX(1); 
+    }
+    }
+  </style>
+</head>
+<body>
+  <div id="shark">
+    <img src="shark.png">
+  </div>
+  <div id="turtle">
+    <img src="turtle.png">
+  </div>
+  <div id="diver1">
+    <img src="diver1.png">
+  </div>
+  <div id="diver2">
+    <img src="diver2.png">
+  </div>
+  <div id="diver3">
+    <img src="diver3.png">
+  </div>
+  <div id="goldFishSchool">
+    <img src="goldFishSchool.png">
+  </div>
+  <div id="faintSchool">
+    <img src="faintSchool.png">
+  </div>
+</body>
+</html>
